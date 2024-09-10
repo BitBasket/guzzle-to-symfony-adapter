@@ -1,0 +1,18 @@
+{
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "7.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "symfony/var-dumper": "*",
+        "phpexperts/dockerize": "^8.1"
+    },
+    "autoload-dev": {
+        "psr-4": { "BitBasket\\GuzzleToSymfonyAdapter\\Tests\\GuzzleV5\\" : "tests/" }
+    },
+    "config": {
+        "classmap-authoritative": true
+    }
+}

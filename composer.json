@@ -1,0 +1,43 @@
+{
+    "name": "bitbasket/guzzle-to-symfony-adapter",
+    "description": "A quick and easy drop-in replacement for Guzzle to use symfony/http-client internally.",
+    "keywords": [
+        "guzzle",
+        "symfony",
+        "adapter",
+        "http-client",
+        "http"
+    ],
+    "homepage": "https://www.bitbasket.co/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BitBasket, FZC",
+            "homepage": "https://www.bitbasket.co/"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "symfony/var-dumper": "*",
+        "povils/phpmnd": "*",
+        "squizlabs/php_codesniffer": "*",
+        "phpexperts/dockerize": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BitBasket\\GuzzleToSymfonyAdapter\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "BitBasket\\GuzzleToSymfonyAdapter\\Tests\\" : "tests/" }
+    },
+    "config": {
+        "classmap-authoritative": true
+    }
+}
